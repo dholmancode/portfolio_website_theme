@@ -1,0 +1,531 @@
+/* General Styles */
+#main {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 200px;
+}
+
+.woocommerce-products-header {
+    position: relative;
+    justify-content: center;
+    text-align: center;
+	display: flex;
+	flex-direction: column;
+}
+
+#sidebar {
+    display: none;
+}
+
+#primary {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+
+form.cart {
+    align-content: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.woocommerce-loop-product__title h2 {
+    font-size: 20px;
+}
+
+.woocommerce ul.products li.product .price {
+    color: #C89878 !important;
+    display: block;
+    font-weight: 400;
+    margin-bottom: 0.5em;
+    font-size: 18px;
+    font-family: nunito;
+}
+
+span.price {
+    color: #C89878 !important;
+}
+
+.woocommerce ul.products li.product .woocommerce-loop-product__title,
+.woocommerce ul.products li.product h3 {
+    padding: 0.5em 0;
+    margin: 0;
+    font-size: 20px;
+}
+
+/* Change the font color of product titles */
+.woocommerce ul.products li.product a h2 {
+    color: white !important; /* Change to your desired color */
+}
+
+/*Single product page*/
+/* Additional Styles for Single Product Page */
+.single-product .product {
+    margin: 20px;
+    background-color: #000; /* Black background for the product box */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 8px;
+    color: #fff; /* White text color */
+    font-family: 'Montserrat', sans-serif; /* Montserrat font */
+}
+
+/* Style the product title */
+.single-product .product h1.entry-title {
+    font-size: 2em;
+}
+
+p.price {
+    color: #C89878 !important;
+}
+
+/* Style the product price */
+.single-product .product .price {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+/* Style the product description */
+.single-product .product .woocommerce-product-details__short-description {
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* Style the "Add to Cart" button */
+.single_add_to_cart_button {
+    background-color: #7B2C2D !important; /* Use the provided color */
+    color: white !important;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    padding: 15px 30px;
+    cursor: pointer;
+    transition: background-color .3s ease, color .3s ease;
+}
+
+/* Centering the container */
+.single-product-container {
+    text-align: center !important;
+}
+
+/* Style for the Add to Cart button */
+.single_add_to_cart_button {
+    display: inline-block !important;
+    padding: 10px 20px !important;
+    background-color: #7B2C2D !important; /* Use the provided color */
+    color: white !important;
+    text-decoration: none !important;
+    border-radius: 5px !important;
+    font-size: 25px !important;
+    transition: .5s ease;
+    
+}
+.single_add_to_cart_button:hover {
+    display: inline-block !important;
+    padding: 10px 20px !important;
+    background-color: #C89878 !important;
+    color: white !important;
+    text-decoration: none !important;
+    border-radius: 5px !important;
+    font-size: 28px !important;
+}
+
+.woocommerce div.product form.cart .variations select {
+    max-width: 100%;
+    min-width: 75%;
+    display: inline-block;
+    margin-right: 1em;
+}
+
+.single-product .product select {
+    background-color: #238196 !important; /* Use the provided color */
+    color: #fff;
+    border: 1px solid #238196;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 20px;
+    font-family: nunito;
+    text-align: center;
+}
+
+.single_variation_wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div.woocommerce-variation-add-to-cart.variations_button{
+    align-items: center;
+    align-content: center;
+}
+
+.woocommerce-notices-wrapper a {
+    color: #000;
+}
+
+/*PRICE--------------------------------------------------------------------------------------------*/
+/* Style for WooCommerce variation price */
+.single-product .product .woocommerce-variation-price,
+.single-product .product .price {
+    font-size: 1.2em;
+    color: #C89878; /* Adjust the color as needed */
+    margin-top: 10px; /* Adjust the spacing as needed */
+}
+
+/* Ensure that the WooCommerce variation price is visible */
+.single-product .product .woocommerce-variation-price,
+.single-product .product .price {
+    display: block !important;
+}
+
+
+/*QUANTITY ------------------------------------------*/
+/* QUANTITY ------------------------------------------*/
+
+.woocommerce .quantity {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.woocommerce .quantity .qty-label {
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #fff; /* Adjust the color as needed */
+}
+
+/* Style the quantity input */
+.woocommerce .quantity input[type="number"] {
+    width: 50px; /* Adjust the width as needed */
+    height: 30px; /* Adjust the height as needed */
+    text-align: center;
+    background-color: #238196;
+    color: #fff;
+    font-family: montserrat;
+    border-radius: 10px;
+    border: none;
+    font-size: 13px;
+    margin: 8px;
+}
+
+
+/* Ensure the arrows are always visible */
+.woocommerce .quantity input[type="number"]::-webkit-inner-spin-button,
+.woocommerce .quantity input[type="number"]::-webkit-outer-spin-button {
+    opacity: 1;
+}
+
+.woocommerce .quantity .qty {
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    background-color: #238196;
+    color: #fff;
+    font-family: nunito;
+    border-radius: 100px;
+    border: none;
+    font-size: 13px;
+    margin: 8px;
+}
+
+/*----------------------------------------------------------------------------------------------*/
+
+
+.single-product .product .single_add_to_cart_button {
+    margin-top: 10px;
+}
+
+/* Change the background color and text color of the "Add to Cart" button on hover */
+.single-product .product .single_add_to_cart_button:hover {
+    background-color: #238196; /* Use a different color on hover */
+}
+
+/* Style the product image */
+.single-product .product .woocommerce-product-gallery__image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style the product image gallery thumbnails */
+.single-product .product .woocommerce-product-gallery__thumbnails img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+
+/* Style the product tabs */
+.single-product .product .woocommerce-tabs {
+    margin-top: 30px;
+}
+
+/* Style the individual related products */
+.single-product .product .related.products ul.products li.product {
+    margin: 0 15px 0 0;
+}
+
+/* Customize the dropdown menu */
+.single-product .product select {
+    background-color: #238196; /* Use the provided color */
+    color: #fff;
+    border: 1px solid #238196; /* Match the background color for the border */
+    border-radius: 5px;
+    padding: 10px;
+}
+
+/* Remove SKU number */
+.single-product .product .sku_wrapper {
+    display: none;
+}
+
+/* REMOVE SHI */
+/* Remove breadcrumbs */
+.woocommerce-breadcrumb {
+    display: none !important;
+}
+
+/* Remove category display */
+.product_meta span.posted_in {
+    display: none !important;
+}
+
+/* Remove sidebar */
+.woocommerce div.product .single-product-sidebar {
+    display: none !important;
+}
+
+/* Remove description and additional information buttons */
+.woocommerce-tabs .panel {
+    display: none !important;
+}
+
+/* Remove tabs and reviews */
+.woocommerce-tabs {
+    display: none !important;
+}
+
+/* Remove reviews tab link */
+#tab-reviews {
+    display: none !important;
+}
+
+[navigation] {
+    display: none;
+}
+
+[search] {
+    display: none;
+}
+
+.content-area {
+    margin-top: 50px;
+    margin-left: 4%;
+    margin-right: 4%;
+}
+
+/* Style the "Add to Cart" button on the single product page */
+
+/* Disable clicking on the linked product image */
+.woocommerce-product-gallery__wrapper a {
+    pointer-events: none;
+    border: none;
+}
+
+.woocommerce-product-gallery__image a {
+    border: none;
+}
+
+.site-main td {
+    color: white;
+}
+
+.site-main th {
+    color: white;
+}
+
+/* Products Layout for Mobile */
+@media (max-width: 900px) {
+    .woocommerce ul.products li.product {
+        width: 100%;
+    }
+}
+
+/*Cart--------------------------------------------------------------------------------------------------------------------------*/
+/* Checkout Page Styles */
+
+/* General Styles */
+body.checkout {
+    font-family: 'Nunito', sans-serif !important; /* Use Nunito font stack */
+    color: #333 !important; /* Adjust text color as needed */
+}
+
+/* Header Styles */
+.checkout h2 {
+    color: #238196 !important; /* Header text color */
+}
+
+/* Form Styles */
+#customer_details label {
+    color: #238196 !important; /* Label text color */
+}
+
+#customer_details input[type="text"],
+#customer_details input[type="email"],
+#customer_details input[type="tel"],
+#customer_details select {
+    border: 1px solid #238196 !important; /* Input border color */
+}
+
+/* Table Styles */
+.shop_table th {
+    color: #238196 !important; /* Table header text color */
+}
+
+.shop_table td {
+    border-top: 1px solid #ddd !important; /* Table row border color */
+}
+
+/* Cart Totals Styles */
+.cart_totals th {
+    color: #238196 !important; /* Cart totals text color */
+}
+
+.cart_totals td {
+    border-top: 1px solid #ddd !important; /* Cart totals row border color */
+}
+
+/* Button Styles */
+.checkout .button {
+    background-color: #238196 !important; /* Button background color */
+    color: #fff !important; /* Button text color */
+    border: 1px solid #238196 !important; /* Button border color */
+}
+
+.checkout .button:hover {
+    background-color: #C89878 !important; /* Button background color on hover */
+    border-color: #C89878 !important; /* Button border color on hover */
+}
+
+/* Proceed to Checkout Button Styles */
+.wc-proceed-to-checkout a.checkout-button {
+    background-color: #238196 !important;
+    color: #fff !important; /* Proceed to checkout button text color */
+    border: 0px solid #C89878 !important; /* Proceed to checkout button border color */
+}
+
+.wc-proceed-to-checkout a.checkout-button:hover {
+	background-color: #C89878 !important; 
+    border-color: #238196 !important; /* Proceed to checkout button border color on hover */
+}
+
+/* Shipping Methods Styles */
+.woocommerce-shipping-totals th,
+.woocommerce-shipping-totals td {
+    color: #238196 !important; /* Shipping methods text color */
+}
+
+/* Total Styles */
+.order-total th {
+    color: #238196 !important; /* Total text color */
+}
+
+.order-total td {
+    border-top: 1px solid #ddd !important; /* Total row border color */
+    color: #C89878 !important; /* Total amount text color */
+}
+
+/*checkout -----------------------------------------------------------------------------------*/
+header.entry-header{
+    position: relative;
+    display: flex;
+    justify-content: center;
+	background-color: rgba(0, 0, 0, 0);
+	z-index:500;
+}
+
+div.col-1 input {
+    padding: 10px;
+
+}
+
+#text {
+	color: white;
+}
+
+address {
+	color: white;
+}
+
+#add_payment_method table.cart img, .woocommerce-cart table.cart img, .woocommerce-checkout table.cart img {
+    width: 200px !important;
+    height: 200px !important;
+}
+
+/* Show product thumbnails on screens with a maximum width of 768px */
+@media only screen and (max-width: 768px) {
+    .woocommerce #content table.cart .product-thumbnail,
+    .woocommerce table.cart .product-thumbnail,
+    .woocommerce-page #content table.cart .product-thumbnail,
+    .woocommerce-page table.cart .product-thumbnail {
+        display: block !important;
+    }
+
+    /* Make adjustments for responsive layout on screens with a maximum width of 768px */
+    .woocommerce table.shop_table_responsive tr td,
+    .woocommerce-page table.shop_table_responsive tr td {
+        display: block;
+        text-align: right !important;
+    }
+}
+
+
+header.woocommerce-products-header {
+	z-index:300;
+	
+}
+
+a.button.product_type_variable.add_to_cart_button{
+	display: none;
+	
+}
+a.button.product_type_simple.add_to_cart_button{
+	display: none;
+}
+.woocommerce-result-count{
+		display: none;
+
+}
+
+.woocommerce-ordering {
+		display: none;
+
+	
+}
+
+.woocommerce ul.products li.product .button {
+	display: none !important;
+	margin-top: 1em;
+}
+
+.woocommerce ul.order_details {
+	color: white;
+}
+/*CART*/
+
+
+
+
+
+/*CHECKOUT*/
+
+
+
